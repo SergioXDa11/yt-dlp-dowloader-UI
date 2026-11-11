@@ -44,8 +44,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ajustesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.idiomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.descargarYtdlpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.descargarFfpmegToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.españolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.githubYtdlpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -65,9 +65,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(62, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 16);
+            this.label1.Size = new System.Drawing.Size(59, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Url:";
+            this.label1.Text = "Link Url:";
             // 
             // button1
             // 
@@ -76,7 +76,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(49, 20);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Pegar";
+            this.button1.Text = "Paste";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -102,9 +102,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(62, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 16);
+            this.label2.Size = new System.Drawing.Size(55, 16);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Formato:";
+            this.label2.Text = "Format:";
             // 
             // button2
             // 
@@ -113,7 +113,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(49, 20);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Borrar";
+            this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -124,7 +124,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(49, 20);
             this.button3.TabIndex = 9;
-            this.button3.Text = "Borrar";
+            this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -135,7 +135,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(49, 20);
             this.button4.TabIndex = 8;
-            this.button4.Text = "Pegar";
+            this.button4.Text = "Paste";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -146,9 +146,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(62, 181);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 16);
+            this.label3.Size = new System.Drawing.Size(106, 16);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Ruta de Descarga";
+            this.label3.Text = "Download path:";
             // 
             // textBox2
             // 
@@ -166,7 +166,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(124, 50);
             this.button5.TabIndex = 10;
-            this.button5.Text = "DESCARGAR";
+            this.button5.Text = "DOWNLOAD";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -184,36 +184,40 @@
             // 
             this.ajustesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.idiomaToolStripMenuItem,
-            this.descargarYtdlpToolStripMenuItem,
-            this.descargarFfpmegToolStripMenuItem,
             this.githubYtdlpToolStripMenuItem});
             this.ajustesToolStripMenuItem.Name = "ajustesToolStripMenuItem";
-            this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.ajustesToolStripMenuItem.Text = "Ajustes";
+            this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.ajustesToolStripMenuItem.Text = "Settings";
             // 
             // idiomaToolStripMenuItem
             // 
+            this.idiomaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.españolToolStripMenuItem,
+            this.englishToolStripMenuItem});
             this.idiomaToolStripMenuItem.Name = "idiomaToolStripMenuItem";
             this.idiomaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.idiomaToolStripMenuItem.Text = "Idioma";
             // 
-            // descargarYtdlpToolStripMenuItem
+            // españolToolStripMenuItem
             // 
-            this.descargarYtdlpToolStripMenuItem.Name = "descargarYtdlpToolStripMenuItem";
-            this.descargarYtdlpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.descargarYtdlpToolStripMenuItem.Text = "Descargar yt-dlp";
+            this.españolToolStripMenuItem.Name = "españolToolStripMenuItem";
+            this.españolToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.españolToolStripMenuItem.Text = "Español";
+            this.españolToolStripMenuItem.Click += new System.EventHandler(this.españolToolStripMenuItem_Click);
             // 
-            // descargarFfpmegToolStripMenuItem
+            // englishToolStripMenuItem
             // 
-            this.descargarFfpmegToolStripMenuItem.Name = "descargarFfpmegToolStripMenuItem";
-            this.descargarFfpmegToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.descargarFfpmegToolStripMenuItem.Text = "Descargar ffpmeg";
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.englishToolStripMenuItem.Text = "English";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // githubYtdlpToolStripMenuItem
             // 
             this.githubYtdlpToolStripMenuItem.Name = "githubYtdlpToolStripMenuItem";
             this.githubYtdlpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.githubYtdlpToolStripMenuItem.Text = "github yt-dlp";
+            this.githubYtdlpToolStripMenuItem.Click += new System.EventHandler(this.githubYtdlpToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -263,9 +267,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ajustesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem idiomaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem descargarYtdlpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem descargarFfpmegToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem githubYtdlpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem españolToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
     }
 }
 

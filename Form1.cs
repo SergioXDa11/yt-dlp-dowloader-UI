@@ -93,13 +93,52 @@ namespace yt_dlp_Downloader
                 {
                     process.WaitForExit();
                     this.button5.Enabled = false;
-                    this.button5.Text = "Espere...";
+                    if (button1.Text == "Paste")
+                        this.button5.Text = "Wait...";
+                    else
+                        this.button5.Text = "Espere...";
                     await Task.Delay(7000);
                     this.button5.Enabled = true;
-                    this.button5.Text = "Descargar";
+                    if (button1.Text == "Paste")
+                        this.button5.Text = "DOWNLOAD";
+                    else
+                        this.button5.Text = "DESCARGAR";
+                    
                 }
 
             }
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.ajustesToolStripMenuItem.Text = "Settings";
+            this.button1.Text = "Paste";
+            this.button2.Text = "Delete";
+            this.button4.Text = "Paste";
+            this.button3.Text = "Delete";
+            this.button5.Text = "DOWNLOAD";
+            this.label1.Text = "Link Url:";
+            this.label2.Text = "Format: ";
+            this.label3.Text = "Download path: ";
+        }
+
+        private void españolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.ajustesToolStripMenuItem.Text = "Ajustes";
+            this.button1.Text = "Pegar";
+            this.button2.Text = "Borrar";
+            this.button4.Text = "Pegar";
+            this.button3.Text = "Borrar";
+            this.button5.Text = "DESCARGAR";
+            this.label1.Text = "Enlace Url:";
+            this.label2.Text = "Formato: ";
+            this.label3.Text = "Ruta de descarga: ";
+
+        }
+
+        private void githubYtdlpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/yt-dlp/yt-dlp");
         }
     }
 }
